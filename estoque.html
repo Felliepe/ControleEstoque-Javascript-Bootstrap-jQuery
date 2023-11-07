@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estoque - Cadastro</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body onload="carregarTotalEstoque()">
+    <!--Carrinho de compras-->
+    <div class="carrinho">
+        <img src="img/shopping_cart_checkout_FILL0_wght400_GRAD0_opsz24.png">
+        <p>Itens no estoque: <span id="totalEstoque">0</span></p>
+    </div>
+
+    <!--Formulário: Nome, código e quantidade de produtos-->
+    <form>
+        <table class="table-striped">
+            <caption>Cadastro de novos produtos</caption>
+            <!--Nome do produto-->
+            <tbody>
+                <tr>
+                    <td class="alinharRotulos">Nome do produto:</td>
+                    <td><input id="txtNomeProduto" type="text" class="form-control"></td>
+                </tr>
+                <!--Código do produto-->
+                <tr>
+                    <td class="alinharRotulos">Código do produto:</td>
+                    <td><input id="txtCodProduto" type="text" class="form-control"></td>
+                </tr>
+                <!--Quantidade do produto-->
+                <tr>
+                    <td class="alinharRotulos">Quantidade do produto:</td>
+                    <td>
+                        <select id="qtidadeProduto" class="form-control">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </td>
+                </tr>
+                <!--Botoes-->
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="button" value="Cadastrar"  class="btn btn-primary"
+                            onclick="validarProduto('txtNomeProduto','txtCodProduto','qtidadeProduto')">
+                        <input type="button" value="Ver estoque" class="btn btn-secondary" onclick="abrir()">
+                        <input type="reset" value="Limpar" class="btn btn-danger">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script src="funcoes.js"></script>
+</body>
+
+</html>

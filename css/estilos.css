@@ -1,0 +1,56 @@
+* {
+    background: linear-gradient(rgba(175, 161, 161, 0.8), rgba(206, 184, 184, 0.8)),
+    url("../img/controle-estoque.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.alinharRotulos {
+    text-align: right;
+}
+
+.carrinho {
+    width: 300px;
+    float: right;
+}
+
+.carrinho p {
+    display: inline;
+}
+
+table {
+    clear: both;
+    background-color: rgb(198, 230, 194);
+    border-radius: 10px;
+    color: rgb(43, 2, 2);
+    padding: 10px;
+    width: 400px;
+    margin: auto;
+    border-collapse: separate;
+    border-spacing: 0 1em;
+    font-size: 1.2em;
+}
+
+caption {
+    color: rgb(97, 99, 213);
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.ccc {
+    background-color: #800 !important;
+    color: #fcc !important;
+    border-color: #f00 !important;
+}
+
+div img {
+    width: 40px;
+}
+
+.revela {
+    display: block;
+    width: 500px;
+    height: 500px;
+    background-color: beige;
+}
